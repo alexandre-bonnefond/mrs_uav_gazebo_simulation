@@ -801,6 +801,21 @@
     {{ ouster }}
     {# <!--}--> #}
 
+    {# Livox Mid360 {--> #}
+    {%- set livox-mid360 = components.livox-mid360_macro(
+      parent_link = root,
+      sensor_name = 'livox-mid',
+      x = 0.0,
+      y = 0.0,
+      z = 0.7598,
+      roll = 0,
+      pitch = 0,
+      yaw = 0,
+      mount = none,
+      spawner_args = spawner_args)
+    -%}
+    {{ livox-mid360 }}
+    {# <!--}--> #}
     {# ========================== camera sensors ======================== #}
 
     {# Realsense placements {--> #}
